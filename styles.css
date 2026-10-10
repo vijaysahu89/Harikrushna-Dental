@@ -372,9 +372,19 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   }
 
   /* Hero Background Image Alignment */
-  .hero-bg{
-    background-size:cover !important;
-    background-position:8% 18% !important;
+  .hero, 
+  .hero-section, 
+  #home,
+  .hero-bg {
+    background-size: cover !important;
+    background-position: 82% center !important; /* Shifts focus to the receptionist & wall signage */
+  }
+
+  /* If the hero image is rendered via an <img> tag */
+  .hero img,
+  .hero-bg-img,
+  .hero-image img {
+    object-position: 82% center !important;
   }
 
   .hero h1,
